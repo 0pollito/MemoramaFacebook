@@ -48,7 +48,20 @@ function display(argument) {
 		if (selected.className == previewSelected.className) {
 			$(previewSelected).removeClass("red z-depth-5");
 		}else{
-			$('#preview').append('<h4 class="center blue-text">Descubriendo tus respuestas</h4><div class="row"><div class="col s12 m6">hola mundo</div><div class="col s12 m6">hola mundo2</div></div>');
+			$('#preview').append('<h4 class="center blue-text">Descubriendo tus respuestas</h4>'+
+								'<div class="row">'+
+								'<div class="col s12 m6"><img src="img/love.png" class="responsive-img circle"></div>'+
+								'<div class="col s12 m6">'+
+									'<div class="card blue-grey darken-1">'+
+        								'<div class="card-content white-text">'+
+        									'<span class="card-title">Name friend</span>'+
+        									'<p>this content information profle your friend facebook'+
+        									'I am effectively.</p>'+
+        								'</div>'+
+        							'<div class="card-action">'+
+        								'<a href="#">link of biography</a>'+
+        							'</div>'+
+        						'</div></div></div>');
 			$('#bt').trigger("click");
 		} 
 	}
