@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memorama con amigos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=no, minimal-ui">
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/icons.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<!--<script type="text/javascript" src="https://connect.facebook.net/en_US/fbinstant.6.0.js"></script>
+	 <script type="text/javascript" src="js/init.js"></script> 
+	 -->
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+</head>
+<body>
+	<h2>Memorama</h1>
+	<h4>Juega memorama con las fotos de tus amigos.</h3>
+	<div class="row"><a href="#" id="login" class="btn btn-primary">Iniciar sesión</a> <a href="#" id="play" class="btn red">Play</a>
+	<button id="bt" data-target="modal1" class="btn modal-trigger hide">Modal</button>
+	 </div>
+	<div>
+		<div class="row">
+			<div class="col s12 m6 card-panel teal">
+				<h5 class="center">Fotos de Perfil</h5>
+				<div id="photos" ></div>
+			</div>
+			<div class="col s12 m6 card-panel orange">
+				<h5 class="center">Información de perfil</h5>
+				<div id="descriptions"></div>
+			</div>
+		</div>
+		
+	</div>
+	<div id="modal1" class="modal">
+    	<div id="preview" class="modal-content">
+      		<h4>Modal Header</h4>
+      		<p>A bunch of text</p>
+    	</div>
+    <div class="modal-footer">
+      <a id="closeModal" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+    </div>
+  </div>
+
+	<!--
+	<script>
+	// Load the SDK asynchronously
+	  (function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) return;
+	    js = d.createElement(s); js.id = id;
+	    js.src = "//connect.facebook.net/en_US/sdk.js";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));
+	 </script>
+	-->
+</body>
+</html>

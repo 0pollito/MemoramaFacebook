@@ -1,0 +1,33 @@
+body {
+  padding: 2px;
+  background-image: url(../images/mount.jpg);
+  height: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#textos{
+	height: 300px;
+	overflow: auto;
+}
+
+#map{
+	height: 420px;
+	width: 98%;
+}
+
+#prev-button,#next-button{
+	visibility: hidden;
+}
+
+.videoContainer{
+	width: 20%;
+	min-height: 300px;
+	margin: auto;
+	padding: 2px;
+}
+.tarjet{
+	height: 100px;
+}
